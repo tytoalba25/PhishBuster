@@ -1,6 +1,33 @@
 # streamlit run PhishBusters_Demo_v1.0.py 
 
-# https://www.sciencedirect.com/science/article/pii/S1877050921011741
+# pip install -r requirements.txt
+import subprocess
+import sys
+
+# Function to install a package
+def install_package(package):
+    """
+    Installs the specified package using pip.
+    """
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+# List of required packages
+required_packages = [
+    "streamlit==1.27.2",
+    "pandas==2.1.1",
+    "nltk==3.8.1",
+    "textblob==0.17.1",
+    "pywin32==306",
+    "scikit-learn==1.5.2"
+]
+
+# Install each required package
+for package in required_packages:
+    try:
+        __import__(package.split("==")[0])  # Check if package is already installed
+    except ImportError:
+        print(f"Installing {package}...")
+        install_package(package)
 
 
 import win32com.client  # For Outlook integration
