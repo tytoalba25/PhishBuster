@@ -1,4 +1,4 @@
-# streamlit run PhisBusters_Demo_v1.0.py 
+# streamlit run PhishBusters_Demo_v1.0.py 
 
 # https://www.sciencedirect.com/science/article/pii/S1877050921011741
 
