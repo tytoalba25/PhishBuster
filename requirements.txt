@@ -1,0 +1,6 @@
+streamlit==1.27.2  # Latest Streamlit version as of writing
+pandas==2.1.1      # For handling DataFrame operations
+nltk==3.8.1        # For natural language processing
+textblob==0.17.1   # For simple text processing
+pywin32==306       # For interacting with Outlook (win32com.client)
+scikit-learn==1.5.2 # For machine learning models
